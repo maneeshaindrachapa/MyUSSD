@@ -1,0 +1,36 @@
+<ion-content padding>
+  <img src="assets/img/icon.png" width="30%" class="logo">
+  <h3 class="format" class="titleh3">Select the Mobile Operator</h3>
+  <br>
+  <ion-list radio-group [(ngModel)]="relationship">
+    <ion-item class="item item-trns text-center">
+      <ion-label>Dialog</ion-label>
+      <ion-radio value="dialog" id="dialog" (click)="operatorSelect('dialog')" checked ></ion-radio>
+    </ion-item>
+    <ion-item class="item item-trns text-center">
+      <ion-label>Mobitel</ion-label>
+      <ion-radio value="mobitel" id="mobitel" (click)="operatorSelect('mobitel')"></ion-radio>
+    </ion-item>
+    <ion-item class="item item-trns text-center">
+      <ion-label>Airtel</ion-label>
+      <ion-radio value="airtel" id="airtel" (click)="operatorSelect('airtel')"></ion-radio>
+    </ion-item >
+    <ion-item class="item item-trns text-center">
+      <ion-label>Etisalat</ion-label>
+      <ion-radio value="etisalat" id="etisalat" (click)="operatorSelect('etisalat')"></ion-radio>
+    </ion-item >
+    <ion-item class="item item-trns text-center">
+      <ion-label>Hutch</ion-label>
+      <ion-radio value="hutch" id="hutch" (click)="operatorSelect('hutch')"></ion-radio>
+    </ion-item><br><br>
+    <ion-item >
+        <ion-input type="number" id="inputNo" placeholder="Enter the Pin Number" [(ngModel)]="inputNo" outline>Enter the Pin Number</ion-input>
+    </ion-item>
+  </ion-list>
+  
+  <button ion-button full style="align-content:center" (click)="recharge()" >Recharge</button>
+</ion-content>
+
+<ion-footer>
+  ManeeshaIndrachapa©
+</ion-footer>

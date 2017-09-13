@@ -1,0 +1,32 @@
+ion-content{
+    font-family: Titillium web;
+}
+
+ion-footer{
+    text-align: center;
+    opacity: 0.5;
+    font-size:1rem;
+    margin: 5px;
+    color: white;
+}
+toolbar-title{
+    visibility: hidden;
+}
+
+.logo{
+    display: block;
+    margin: 0 auto;
+    //background-image: url("../../assets/img/icon.png");
+}
+.titleh3{
+    color:white;
+    margin:2%;
+    padding:2%;
+    text-align:center;
+    text-shadow: black 0.1em 0.1em 0.2em
+}
+.item.item-trns {
+	border-color: rgba(0, 0, 0, 0.62);
+	background-color: rgba(255, 255, 255, 0.60);
+	color: black; 
+}
